@@ -1,0 +1,171 @@
+<!-- 
+
+  Name: Aya Abdulhalim Aldoubi
+  ID: 2106070
+  Section: GAR
+  
+  Name: Khadijah Mohammed Alhaddad
+  ID: 2106069
+  Section: GAR
+
+  Name: Sereen Hussain Baaqeel
+  ID: 2105237 
+  Section: GAR
+  
+  Date: 23/03/2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Feedback</title>
+
+</head>
+<body style="background-color: #556152;">
+
+    <!-- Home Page Navigation Bar -->
+    <header class="top-header-Dark bodyDark">
+        <div class="logo-area">
+          <img src="images/LogoWhite.svg" alt="FloraWise Logo" class="brand-logo" />
+        </div>
+        <nav class="main-nav-dark">
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="flowers.html">Flowers</a></li>
+            <li><a href="symbolism.html">Symbolism</a></li>
+            <li><a href="watch.html">Watch</a></li>
+            <li><a href="feedback.html" class="active">Feedback</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <!-- Header -->
+    <div class="FeedbackHeader"> 
+        <div>
+            <h1> We Value Your Feedback </h1>    
+            <p class="main-description-light"> Help us improve by sharing your thoughts and suggestions about FloraWise website </p>
+        </div>
+    </div>
+
+    <!-- Form -->
+    <div class="feedbackContainer"> 
+        <h4 class="formHeader">Personal Information </h4>   
+        <hr style="height:1px;border-width:0;color:#DCDBD8;margin-top: 2%; background-color: #DCDBD8;">
+ 
+        <form>
+            <!-- First Line -->
+            <div class="form-container">
+                <div class="input-field">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required placeholder=" Enter Your First Name ...">
+                </div>
+                <div class="input-field">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required placeholder="Enter Your Last Name ...">
+                </div>
+            </div>
+
+            <!-- Second Line -->
+            <div class="form-container">
+                <div class="input-field">
+                    <label for="Email" calss="label">Email</label>
+                    <input type="text" id="Email" name="Email" required placeholder="Enter Your Email ...">
+                </div>
+                <div class="radio-container">
+                    <label class="question">Your Gardening Experience?</label>
+                    <div class="radio-options">
+                        <div class="radio-option">
+                            <input type="radio" id="expert" name="experience" value="Expert">
+                            <label for="expert">Expert</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="intermediate" name="experience" value="Intermediate">
+                            <label for="intermediate">Intermediate</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="beginner" name="experience" value="Beginner">
+                            <label for="beginner">Beginner</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="no-experience" name="experience" value="No Experience">
+                            <label for="no-experience">No Experience</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="formHeader">Your Feedback </h4>   
+            <hr style="height:1px;border-width:0;color:#DCDBD8;margin-top: 2%; background-color: #DCDBD8;">
+    
+            <!-- Third Line -->
+            <div class="form-container">
+                <div class="CheckBox-container">
+                    <label class="question">What Features Would You Love Us To Add? <span style="font-size: 12px;font-weight: 300;">(Select all that apply)</span></label>
+                    <div class="Check-options">
+                        <div class="Check-option">
+                            <input type="checkbox" id="live-expert-sessions" name="features" value="live-expert-sessions">
+                            <label for="live-expert-sessions">Live Expert Sessions</label>
+                        </div>
+                        <div class="Check-option">
+                            <input type="checkbox" id="flower-identification-tool" name="features" value="flower-identification-tool">
+                            <label for="flower-identification-tool">Flower Identification Tool</label>
+                        </div>
+                        <div class="Check-option">
+                            <input type="checkbox" id="community-forum" name="features" value="community-forum">
+                            <label for="community-forum">Community Forum</label>
+                        </div>
+                        <div class="Check-option">
+                            <input type="checkbox" id="3d-flower-viewer" name="features" value="3d-flower-viewer">
+                            <label for="3d-flower-viewer">3D Flower Viewer (AR)</label>
+                        </div>
+                        <div class="Check-option">
+                            <input type="checkbox" id="personalized-flower-recommendations" name="features" value="personalized-flower-recommendations">
+                            <label for="personalized-flower-recommendations">Personalized Flower Recommendations</label>
+                        </div>
+                        <div class="Check-option">
+                            <input type="checkbox" id="plant-disease-diagnosis" name="features" value="plant-disease-diagnosis">
+                            <label for="plant-disease-diagnosis">Plant Disease Diagnosis</label>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- Forth Line -->
+            <div class="dropdown-container">
+                <label for="content-preference">What Type of Content Do You Prefer The Most?</label>
+                <select id="content-preference" name="content-preference">
+                    <option value="" disabled selected class="default-option">Please choose one</option>
+                    <option value="1">Flower Overviews</option>
+                    <option value="2">Detailed Flower Information</option>
+                    <option value="3">Flower Data and Insights</option>
+                    <option value="4">Gardening Videos</option>
+                </select>
+            </div>
+
+            <!-- Fifth Line -->
+            <div class="form-container">
+                <div class="input-field full">
+                    <label for="Feedback-Message">Feedback Message</label>
+                    <textarea id="feedback-text" name="feedback-text" rows="6" cols="40" placeholder="Please provide your feedback here..."></textarea>
+                </div>
+            </div>
+            <div class="button-container">
+            <button type="reset" class="ClearButton">Reset</button>
+            <button type="submit" class="SubmitButton">Submit</button>
+        </div>
+        </form>
+    </div>
+
+    <!-- Footer -->  
+    <footer class="page-footer-Dark">
+        <div class="footer-content">
+            <img src="images/OnlyLogoWhite.svg" alt="FloraWise Logo" class="footer-logo" />
+            <p>FloraWise | Empowering Your Flower Journey | &copy; 2025</p>
+        </div>      
+    </footer>
+
+</body>
+</html>
