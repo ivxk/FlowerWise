@@ -1,0 +1,23 @@
+/* print.css -> makes only tables visible when printing */
+
+body > *:not(.table-section) {
+    display: none;
+  }
+  
+  /* Ensure table sections display well */
+  .table-section {
+    display: block;
+  }
+  
+  /* Improve print appearance */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
